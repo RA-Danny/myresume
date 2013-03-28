@@ -1,0 +1,146 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Stylish Curriculum Vitae
+% LaTeX Template
+% Version 1.0 (18/7/12)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Stefano (http://stefano.italians.nl/)
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% The main font used in this template, Adobe Garamond Pro, does not 
+% come with Windows by default. You will need to download it in
+% order to get an output as in the preview PDF. Otherwise, change this 
+% font to one that does come with Windows or comment out the font line 
+% to use the default LaTeX font.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[a4paper, oneside, final]{scrartcl} % Paper options using the scrartcl class
+
+\usepackage{scrpage2} % Provides headers and footers configuration
+\usepackage{titlesec} % Allows creating custom \section's
+\usepackage{marvosym} % Allows the use of symbols
+\usepackage{tabularx,colortbl} % Advanced table configurations
+\usepackage{fontspec} % Allows font customization
+
+\defaultfontfeatures{Mapping=tex-text}
+\setmainfont{Adobe Garamond Pro} % Main document font
+
+\titleformat{\section}{\large\scshape\raggedright}{}{0em}{}[\titlerule] % Section formatting
+
+\pagestyle{scrheadings} % Print the headers and footers on all pages
+
+\addtolength{\voffset}{-0.5in} % Adjust the vertical offset - less whitespace at the top of the page
+\addtolength{\textheight}{2cm} % Adjust the text height - less whitespace at the bottom of the page
+
+\newcommand{\gray}{\rowcolor[gray]{.90}} % Custom highlighting for the work experience and education sections
+
+%----------------------------------------------------------------------------------------
+% FOOTER SECTION
+%----------------------------------------------------------------------------------------
+
+\renewcommand{\headfont}{\normalfont\rmfamily\scshape} % Font settings for footer
+
+\cofoot{
+\addfontfeature{LetterSpace=20.0}\fontsize{12}{17}\selectfont % Letter spacing and font size
+
+8 Fox Chase Turn {\large\textperiodcentered} Pittstown {\large\textperiodcentered} New Jersey 08867\\ % Your mailing address
+{\Large\Letter} kbambridge1@gmail.com \ {\Large\Telefon} (908) 528-7844 % Your email address and phone number
+}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\begin{center} % Center everything in the document
+
+%----------------------------------------------------------------------------------------
+% HEADER SECTION
+%----------------------------------------------------------------------------------------
+
+{\addfontfeature{LetterSpace=20.0}\fontsize{30}{30}\selectfont\scshape Kenneth Bambridge} % Your name at the top
+
+\vspace{0.8cm} % Extra whitespace after the large name at the top
+
+%----------------------------------------------------------------------------------------
+%	OBJECTIVE
+%----------------------------------------------------------------------------------------
+
+\section{Objective}
+
+An intership in software development to gain experience in the field for a future career \\ in software engineering.
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+
+\begin{tabularx}{0.97\linewidth}{>{\raggedleft\scshape}p{2cm}X}
+\gray Period & \textbf{September 2012 -- Present}\\
+\gray Degree & \textbf{Bachelor's in Computer Engineering and Computer Science}\\
+\gray GPA & \textbf{3.97/4.0}\\
+\gray University & \textbf{Rutgers School of Engineering} \hfill New Brunswick, New Jersey\\
+%& Extra information about degree
+\end{tabularx}
+
+\vspace{12pt}
+
+\begin{tabularx}{0.97\linewidth}{>{\raggedleft\scshape}p{2cm}X}
+\gray Period & \textbf{September 2008 --- June 2012}\\
+\gray Degree & \textbf{High School Diploma}\\
+\gray GPA & \textbf{Weighted Average: 3.9 | Senior Year Weighted Average: 4.42}\\
+\gray School & \textbf{North Hunterdon High School} \hfill Annandale, New Jersey\\
+\gray Honors & \textbf{National AP Scholar, May `12 Student of the Month, L. Armstrong Jazz Award}\\
+& Scored 5/5 on 8 AP classes including AP Computer Science, AP Physics C, and AP Calc I and II\@.  Class rank not reported, but finished in top 5\%.
+\end{tabularx}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\section{Work Experience}
+
+\begin {tabularx}{0.97\linewidth}{>{\raggedleft\scshape}p{2cm}X}
+\gray Projects & \textbf{Rutgers Newspaper iOS app | ``Jot" Android app | Java Monopoly Game | Prank Roulette}\\
+  >& iOS - Currently working with a partner on an official iOS app for the Rutgers University school newspaper to display articles from a database in a clean UI.  \\ \\
+  >&``Jot" - Led a 3-person team to design and program android app that presented user content (notes, pictures) in a custom interface and required the use of Android apis to query from a database stored in the phone to access `Jots'. \\ \\
+  >& Java Monopoly - Programmed the engine for a Java Monopoly Game and programmatically drew playing pieces on the game board using Java. \\ \\
+  >& Prank Roulette - Worked with a partner on a python web app that creates conference calls between persons of the user's choosing.  
+\end{tabularx}
+
+%\vspace{12pt}
+
+%\begin{tabularx}{0.97\linewidth}{>{\raggedleft\scshape}p{2cm}X}
+%\gray Period & \textbf{March 2010 --- Present} \\
+%\gray Employer & \textbf{Various Restaurants}\\
+%\gray Job Title & \textbf{Gigging Jazz Pianist}\\
+%  >&I contacted restuarants to perform jazz piano at either solo or as a small combo. 
+%\end{tabularx}
+
+
+%----------------------------------------------------------------------------------------
+%	SKILLS
+%----------------------------------------------------------------------------------------
+
+\section{Skills}
+
+\begin{tabular}{@{} >{\bfseries}l @{\hspace{4ex}}l}
+Known Computer Languages & Java, Objective-C, MATLAB (Willing to learn others) \\
+Familiar Languages & Python, C, html, css, latex \\
+Tools and Systems & Vim | Basics of UNIX \\
+Other & Jazz Piano
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+
+\end{center}
+
+\end{document}
